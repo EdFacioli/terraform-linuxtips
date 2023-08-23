@@ -1,6 +1,6 @@
 resource "aws_instance" "this" {
   ami             = "ami-0ccabb5f82d4c9af5"
-  instance_type   = "t2.micro"
+  instance_type   = var.instance_type
   key_name        = aws_key_pair.this.key_name
   security_groups = [aws_security_group.this.name]
 

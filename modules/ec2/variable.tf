@@ -1,8 +1,11 @@
 variable "vpc_id" {
-  description = "VPC ID"
-  type        = string
+  type = string
 }
 
 variable "file_path_key_pair" {
+  type = string
+}
+
+variable "instance_type" {
   type = string
 }
